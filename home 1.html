@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>MUET — Home</title>
+  <meta name="description" content="Prototype MUET university portal — Home">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="home">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">MUET</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <button id="nav-toggle" aria-expanded="false" aria-controls="nav-list">Menu</button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="facilities.html">Campus Facilities</a></li>
+          <li><a href="contact.html">Contact / Inquiry</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <section class="hero" aria-labelledby="hero-title">
+      <h1 id="hero-title">Mehran University — Prototype Portal</h1>
+      <p class="lead">Responsive, accessible web prototype showcasing campus info and contact.</p>
+      <form id="search-form" class="search" role="search" aria-label="Search campus content">
+        <label for="q" class="visually-hidden">Search</label>
+        <input id="q" name="q" type="search" placeholder="Search courses, buildings, services...">
+        <button type="submit" class="btn">Search</button>
+      </form>
+    </section>
+
+    <section class="cards" aria-label="Highlights">
+      <article class="card">
+        <h2>Admissions</h2>
+        <p>Find program lists, eligibility, and application timelines.</p>
+        <a href="contact.html" class="btn">Ask about admissions</a>
+      </article>
+      <article class="card">
+        <h2>Research</h2>
+        <p>Explore faculty research areas and recent publications.</p>
+        <a href="#research" class="btn">Explore</a>
+      </article>
+      <article class="card">
+        <h2>Campus Life</h2>
+        <p>Accommodation, transport, and student societies.</p>
+        <a href="facilities.html" class="btn">View facilities</a>
+      </article>
+    </section>
+
+    <section id="research" class="accordion-section" aria-labelledby="research-title">
+      <h2 id="research-title">Featured Research Groups</h2>
+      <div class="accordion" data-accordion>
+        <button class="acc-btn" aria-expanded="false">Biotechnology & Food Chemistry</button>
+        <div class="acc-panel">
+          <p>Work on food chemistry, processing, and functional ingredients.</p>
+        </div>
+        <button class="acc-btn" aria-expanded="false">Telecommunications & Networks</button>
+        <div class="acc-panel">
+          <p>Projects covering 5G, routing, and network security.</p>
+        </div>
+        <button class="acc-btn" aria-expanded="false">Civil & Environmental</button>
+        <div class="acc-panel">
+          <p>Structural analysis, sustainable design, and water resources.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-short">
+      <h2>Need help?</h2>
+      <p>Contact our student support or send an inquiry.</p>
+      <a class="btn" href="contact.html">Send an inquiry</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>MUET</h3>
+        <p>Mehran University of Engineering & Technology, Jamshoro</p>
+      </div>
+      <div>
+        <h4>Quick links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="facilities.html">Facilities</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>pitp@admin.muet.edu.pk</p>
+      </div>
+    </div>
+    <div class="footer-bottom">© MUET — Prototype 2025</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

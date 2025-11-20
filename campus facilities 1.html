@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>MUET — Contact / Inquiry</title>
+  <meta name="description" content="Contact MUET — send inquiries or support requests.">
+  <link rel="stylesheet" href="style.css 1.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">MUET</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <button id="nav-toggle" aria-expanded="false" aria-controls="nav-list">Menu</button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="facilities.html">Campus Facilities</a></li>
+          <li><a href="contact.html">Contact / Inquiry</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <h1>Contact / Inquiry</h1>
+    <p>Use the form below for general inquiries, admissions questions, or support.</p>
+
+    <form id="inquiry-form" class="form" novalidate>
+      <label for="name">Full name</label>
+      <input id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required>
+
+      <label for="subject">Subject</label>
+      <input id="subject" name="subject" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="6" required></textarea>
+
+      <button type="submit" class="btn">Send inquiry</button>
+      <div id="form-status" role="status" aria-live="polite"></div>
+    </form>
+
+    <section class="contact-info">
+      <h2>Other ways to reach us</h2>
+      <p>Email: pitp@admin.muet.edu.pk</p>
+      <p>Phone: +92 22 277XXXX</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>MUET</h3>
+        <p>Mehran University of Engineering & Technology, Jamshoro</p>
+      </div>
+      <div>
+        <h4>Quick links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="facilities.html">Facilities</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>pitp@admin.muet.edu.pk</p>
+      </div>
+    </div>
+    <div class="footer-bottom">© MUET — Prototype 2025</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

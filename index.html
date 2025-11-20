@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mehran University — Home</title>
+  <meta name="description" content="Mehran University — MUET prototype: academics, campus, contact, facilities.">
+  <meta name="keywords" content="Mehran University, MUET, education, campus, undergraduate, postgraduate">
+  <meta property="og:title" content="Mehran University — MUET (Prototype)">
+  <meta property="og:description" content="Responsive university portal prototype for PITP WebDev assignment.">
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">MUET</a>
+      <button id="nav-toggle" aria-expanded="false" aria-controls="main-nav">☰</button>
+      <nav id="main-nav" class="main-nav" role="navigation">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="facilities.html">Campus Facilities</a></li>
+          <li><a href="contact.html">Contact / Inquiry</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container">
+        <h1 id="hero-heading">Welcome to Mehran University (MUET)</h1>
+        <p>Learn. Research. Innovate. A modern prototype built for accessibility and responsiveness.</p>
+        <p><a class="btn" href="facilities.html">Explore Campus Facilities</a></p>
+      </div>
+    </section>
+
+    <section class="features container" aria-labelledby="features-heading">
+      <h2 id="features-heading">What we offer</h2>
+      <div class="grid-3">
+        <article>
+          <h3>Quality Education</h3>
+          <p>Undergraduate and postgraduate programs in engineering, technology, and applied sciences.</p>
+        </article>
+        <article>
+          <h3>Research & Labs</h3>
+          <p>Modern laboratories and research centers supporting student projects and faculty work.</p>
+        </article>
+        <article>
+          <h3>Campus Life</h3>
+          <p>Clubs, sports facilities, and community engagement programs for holistic development.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="news container" aria-labelledby="news-heading">
+      <h2 id="news-heading">Latest Notices</h2>
+      <ul>
+        <li>Open admissions for Fall 2025 — apply online.</li>
+        <li>Workshop: Emerging Trends in Software Engineering — Oct 15, 2025.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Mehran University of Engineering & Technology</strong>
+        <address>Jamshoro, Sindh, Pakistan</address>
+      </div>
+      <div>
+        <nav aria-label="Footer">
+          <a href="index.html">Home</a> ·
+          <a href="facilities.html">Facilities</a> ·
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </div>
+    <div class="container copyright">© MUET — Prototype (PITP-II) • <time datetime="2025-11-14">2025</time></div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — MUET</title>
+  <meta name="description" content="Contact Mehran University — enquiries, admissions, and support.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- same header as index.html (copy/paste for prototype) -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">MUET</a>
+      <button id="nav-toggle-2" aria-expanded="false" aria-controls="main-nav-2">☰</button>
+      <nav id="main-nav-2" class="main-nav" role="navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="facilities.html">Campus Facilities</a></li>
+          <li><a href="contact.html" aria-current="page">Contact / Inquiry</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Contact / Inquiry</h1>
+    <p>If you have questions about admissions, programs, or campus services, send us a message.</p>
+
+    <form id="contact-form" novalidate>
+      <div class="form-row">
+        <label for="name">Full name</label>
+        <input id="name" name="name" type="text" required aria-required="true">
+      </div>
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required aria-required="true">
+      </div>
+      <div class="form-row">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required aria-required="true"></textarea>
+      </div>
+      <div class="form-row">
+        <button class="btn" type="submit">Send Inquiry</button>
+      </div>
+      <div id="form-status" role="status" aria-live="polite"></div>
+    </form>
+
+    <section aria-labelledby="contact-info">
+      <h2 id="contact-info">Other ways to reach us</h2>
+      <p>Email: <a href="mailto:pitp@admin.muet.edu.pk">pitp@admin.muet.edu.pk</a></p>
+      <p>Phone: +92 22 2771xxxx</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div><strong>Mehran University</strong><address>Jamshoro</address></div>
+      <div><nav aria-label="Footer"><a href="index.html">Home</a></nav></div>
+    </div>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+</html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Campus Facilities — MUET</title>
+  <meta name="description" content="Explore campus facilities: libraries, labs, sports, hostels.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">MUET</a>
+      <button id="nav-toggle-3" aria-expanded="false" aria-controls="main-nav-3">☰</button>
+      <nav id="main-nav-3" class="main-nav" role="navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="facilities.html" aria-current="page">Campus Facilities</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Campus Facilities</h1>
+    <p>Search and filter campus facilities. Click an item to expand details.</p>
+
+    <div class="controls">
+      <label for="facility-search">Search facilities</label>
+      <input id="facility-search" type="search" placeholder="e.g., library, lab, hostel">
+    </div>
+
+    <ul id="facilities-list" class="facilities-list" aria-live="polite">
+      <!-- Items will be present in HTML for progressive enhancement -->
+      <li class="facility" data-type="library">
+        <button class="facility-toggle">Central Library</button>
+        <div class="facility-content">Open 8am–8pm. Over 200,000 volumes and digital access.</div>
+      </li>
+      <li class="facility" data-type="lab">
+        <button class="facility-toggle">Computer Science Lab</button>
+        <div class="facility-content">Modern machines, software licenses, and reserved hours for students.</div>
+      </li>
+      <li class="facility" data-type="sports">
+        <button class="facility-toggle">Sports Complex</button>
+        <div class="facility-content">Football, cricket ground, indoor courts, and gym facilities.</div>
+      </li>
+      <li class="facility" data-type="hostel">
+        <button class="facility-toggle">Hostel Residences</button>
+        <div class="facility-content">Separate hostels for male and female students with mess facilities.</div>
+      </li>
+    </ul>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div><strong>Mehran University</strong></div>
+      <div><nav aria-label="Footer"><a href="index.html">Home</a></nav></div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
